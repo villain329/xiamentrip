@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_raiders_second"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_raiders_second_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:nestedScrollingEnabled="false"
+                        />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+
+                        android:text="暂时没有评论"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_raiders_second_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:nestedScrollingEnabled="false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_raiders_second_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/tv_raiders_second_topbar"
+                />
+
+            <!--返回-->
+            <Button
+                android:id="@+id/bt_raiders_second_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/fanhui" />
+            <!--头像-->
+            <ImageView
+                android:id="@+id/iv_raiders_second_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="4dp" />
+            <!--user-->
+            <TextView
+                android:id="@+id/tv_raiders_second_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <!--关注-->
+            <TextView
+                android:id="@+id/tv_raiders_second_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/guanzhu" />
+
+            <!--评论点赞收藏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <!--评论发表-->
+                <TextView
+                    android:id="@+id/tv_raiders_second_comment_send"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/radius"
+                    android:drawableLeft="@mipmap/xie"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="说点什么呢..."
+                    android:textColor="#979797"
+                    android:textSize="10sp" />
+
+                <!--点赞-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_raiders_second_like"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/dianzan" />
+
+                    <TextView
+                        android:id="@+id/tv_raiders_second_like"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"
+
+                        android:textColor="@color/black"
+                        android:text="0"/>
+                </LinearLayout>
+
+                <!--收藏-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_raiders_second_collect"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/shoucang" />
+
+                    <TextView
+                        android:id="@+id/tv_raiders_second_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+                </LinearLayout>
+
+
+                <!--评论数量-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_raiders_second_comment"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/pinglun" />
+
+                    <TextView
+                        android:id="@+id/tv_raiders_second_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_marginBottom="48dp"/>
+</RelativeLayout>

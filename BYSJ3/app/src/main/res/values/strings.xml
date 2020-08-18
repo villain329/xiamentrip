@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">一鹭厦门</string>
+    <string name="home">首页</string>
+    <string name="raiders">攻略</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+
+
+    <color name="gray">#F0F0F0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF2444</color>
+    <color name="select_red">#FD0000</color>
+    <color name="no_select_gray">#979797</color>
+</resources>

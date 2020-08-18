@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_home"
+                style="@style/bottom_text"
+                android:paddingTop="6dp"
+                android:drawableTop="@drawable/shouye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_raiders"
+                style="@style/bottom_text"
+                android:paddingTop="6dp"
+                android:drawableTop="@drawable/gonglue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/raiders"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_plus"
+                style="@style/bottom_text"
+                android:paddingTop="6dp"
+                android:drawableTop="@mipmap/jiagao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="加号"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_message"
+                style="@style/bottom_text"
+                android:paddingTop="6dp"
+                android:drawableTop="@drawable/xiaoxi"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/message"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_mine"
+                style="@style/bottom_text"
+                android:paddingTop="6dp"
+                android:drawableTop="@drawable/wode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mine"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_menu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_marginBottom="50dp"/>
+</RelativeLayout>

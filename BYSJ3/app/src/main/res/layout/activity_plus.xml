@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="23dp">
+
+        <Button
+            android:id="@+id/bt_plus_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:background="@mipmap/fanhui"
+            android:layout_marginTop="7.5dp"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_plus_back"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:overScrollMode="never" />
+
+        <EditText
+            android:id="@+id/et_plus_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rv_plus"
+            android:hint="写个标题吧"
+            android:background="@null"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_below="@+id/et_plus_title"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/et_plus_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/et_plus_title"
+            android:hint="说说你现在的感受"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:textColorHint="@color/black"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_below="@+id/et_plus_content"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_plus_save"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="19dp"-->
+<!--            android:layout_marginBottom="24.5dp"-->
+<!--            android:text="保存"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp" />-->
+
+        <TextView
+            android:id="@+id/tv_plus_send_article"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_article"
+            android:gravity="center"
+            android:text="发布文章"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

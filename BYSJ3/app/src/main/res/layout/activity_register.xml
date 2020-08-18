@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <Button
+        android:id="@+id/bt_mine_register_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/fanhui" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账    号"
+            android:drawableLeft="@mipmap/zhanghao"
+            android:textColor="@color/no_select_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_mine_register_account"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:maxLength="18"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码"
+            android:drawableLeft="@mipmap/mima"
+            android:textColor="@color/no_select_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_mine_register_password"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:maxLength="18"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:drawableLeft="@mipmap/yonghuming"
+                android:textColor="@color/no_select_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_mine_register_user"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:maxLength="10"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_mine_register_complete"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/content_radius"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="225dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="320dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击“完成”按钮，即表示同意"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tv_mine_register_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="《隐私权声明》"
+        android:layout_marginTop="10dp"
+        android:textColor="#60B4E8"/>
+</LinearLayout>
+    </RelativeLayout>

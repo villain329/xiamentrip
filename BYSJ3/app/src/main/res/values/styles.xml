@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="bottom_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="topbar_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="customTabLayout" parent="Widget.Design.TabLayout">
+        <!--指示器的颜色-->
+        <item name="tabIndicatorColor">#0788FF</item>
+        <!--指示器的高度-->
+        <item name="tabIndicatorHeight">2.5dp</item>
+        <!--tab的背景色-->
+        <item name="tabBackground">@color/white</item>
+        <!--tab标题的文本风格-->
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <!--被选中tab的文本颜色-->
+        <item name="tabSelectedTextColor">#0788FF</item>
+    </style>
+
+
+    <!--继承Theme.AppCompat.NoActionBar，不显示标题栏-->
+    <style name="TransparentTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--不设置activity进入和退出动画样式-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--设置窗口的背景为透明，设置透明背景必须要设置此项-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置窗口的背景是否为半透明，设置透明背景必须要设置此项-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置状态栏的背景为半透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+
+<LinearLayout
+    android:id="@+id/ll_home_serach"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_home_search_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:background="@mipmap/fanhui"/>
+    <EditText
+        android:id="@+id/et_home_search_search"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius"
+        android:hint="查询"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="14dp"
+        android:textColorHint="#979797"
+        android:singleLine="true"
+        android:textColor="#000000"
+        
+        android:fitsSystemWindows="true"
+        android:imeOptions="actionDone"
+        />
+    <TextView
+        android:id="@+id/tv_home_search_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10.5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="13.5dp"
+        />
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_home_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_home_serach"/>
+
+</RelativeLayout>

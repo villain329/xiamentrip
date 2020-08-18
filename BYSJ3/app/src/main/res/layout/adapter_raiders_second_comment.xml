@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+android:paddingBottom="4dp"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/iv_adapter_raiders_second_comment_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+    <TextView
+        android:id="@+id/tv__adapter_raiders_second_comment_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        />
+    <TextView
+        android:id="@+id/tv__adapter_raiders_second_comment_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#979797"
+        android:textSize="10sp"
+        android:layout_below="@+id/tv__adapter_raiders_second_comment_user"
+        />
+
+
+</RelativeLayout>
